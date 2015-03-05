@@ -40,6 +40,8 @@
 #     nmake install (or mingw32-make if you use MinGW compiler)
 #
 #   b) Linux RELEASE build.
+#	***Please note that for the Sample template to work on linux based systems, please install the 'say' or GNUstep speech engine.***
+#
 #     mkdir build && cd build
 #     cmake ../ -DCMAKE_BUILD_TYPE="release" -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT_5="ON"
 #     make
