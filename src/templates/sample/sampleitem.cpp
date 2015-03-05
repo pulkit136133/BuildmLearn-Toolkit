@@ -37,7 +37,6 @@
 
 SampleItem::SampleItem(QWidget *parent) : QWidget(parent), m_ui(new Ui::SampleItem) {
   m_ui->setupUi(this);
-  //m_ui->m_lblPicture->setFixedHeight((int) (SIMULATOR_CONTENTS_HEIGHT * 0.4));
 
   QFont caption_font = m_ui->m_lblQuestionNumber->font();
   caption_font.setPointSize(caption_font.pointSize() + SIMULATOR_HEADER_SIZE_INCREASE);
@@ -45,7 +44,7 @@ SampleItem::SampleItem(QWidget *parent) : QWidget(parent), m_ui(new Ui::SampleIt
 
   connect(m_ui->m_btnNext, SIGNAL(clicked()), this, SIGNAL(nextCardRequested()));
   connect(m_ui->m_btnPrevious, SIGNAL(clicked()), this, SIGNAL(previousCardRequested()));
-  connect(m_ui->m_btnFlip, SIGNAL(clicked()), this, SLOT(flip()));
+  connect(m_ui->m_btnFlip, SIGNAL(clicked()), this, SLOT(speak()));
 }
 
 SampleItem::~SampleItem() {
@@ -53,7 +52,7 @@ SampleItem::~SampleItem() {
 }
 
 void SampleItem::reset() {
-  //flip(0);
+  //
 }
 
 void SampleItem::setQuestion(const SampleQuestion &question, int question_number, int total_questions) {
@@ -63,11 +62,9 @@ void SampleItem::setQuestion(const SampleQuestion &question, int question_number
   m_ui->m_lblQuestionText->setText(question.question());
   m_ui->m_lblHint->setText(question.hint());
   m_ui->m_answer->setText(QString("<span style=\" font-size:14pt;\">%1</span>").arg(question.answer()));
-  //m_ui->m_lblAnswer->setText(QString("<span style=\" font-size:14pt;\">%1</span>").arg(question.answer()));
-  //m_ui->m_lblPicture->setPixmap(QPixmap(question.picturePath()).scaled(m_ui->m_lblPicture->size(), Qt::KeepAspectRatio));
 }
 
-void SampleItem::flip() {
+void SampleItem::speak() {
     QString program = "say";
     QStringList arguments;
 

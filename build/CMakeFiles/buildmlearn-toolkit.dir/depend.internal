@@ -12540,7 +12540,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o
  ../src/core/templategenerator.h
  ../src/core/templatesimulator.h
  ../src/definitions/definitions.h
- ../src/gui/labelwithstatus.h
  ../src/gui/lineeditwithstatus.h
  ../src/gui/plaintoolbutton.h
  ../src/gui/systemtrayicon.h
@@ -12783,7 +12782,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o
  ../src/core/templateentrypoint.h
  ../src/core/templatefactory.h
  ../src/definitions/definitions.h
- ../src/gui/labelwithstatus.h
  ../src/gui/lineeditwithstatus.h
  ../src/gui/plaintoolbutton.h
  ../src/gui/systemtrayicon.h
@@ -12971,7 +12969,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o
  /usr/include/qt5/QtWidgets/QLineEdit
  /usr/include/qt5/QtWidgets/QListWidget
  /usr/include/qt5/QtWidgets/QMenu
- /usr/include/qt5/QtWidgets/QPushButton
  /usr/include/qt5/QtWidgets/QScrollArea
  /usr/include/qt5/QtWidgets/QSpacerItem
  /usr/include/qt5/QtWidgets/QSystemTrayIcon
@@ -13003,7 +13000,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o
  /usr/include/qt5/QtWidgets/qlistview.h
  /usr/include/qt5/QtWidgets/qlistwidget.h
  /usr/include/qt5/QtWidgets/qmenu.h
- /usr/include/qt5/QtWidgets/qpushbutton.h
  /usr/include/qt5/QtWidgets/qrubberband.h
  /usr/include/qt5/QtWidgets/qscrollarea.h
  /usr/include/qt5/QtWidgets/qsizepolicy.h
@@ -13369,7 +13365,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o
  ../src/core/templateeditor.h
  ../src/core/templatesimulator.h
  ../src/definitions/definitions.h
- ../src/gui/labelwithstatus.h
  ../src/gui/lineeditwithstatus.h
  ../src/gui/plaintoolbutton.h
  ../src/gui/systemtrayicon.h

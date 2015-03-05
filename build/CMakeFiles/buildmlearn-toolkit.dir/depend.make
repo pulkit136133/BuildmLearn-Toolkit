@@ -12539,7 +12539,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/core/templategenerator.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/core/templatesimulator.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/definitions/definitions.h
-CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/gui/labelwithstatus.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/gui/lineeditwithstatus.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/gui/plaintoolbutton.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplecore.cpp.o: ../src/gui/systemtrayicon.h
@@ -12782,7 +12781,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../s
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/core/templateentrypoint.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/core/templatefactory.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/definitions/definitions.h
-CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/gui/labelwithstatus.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/gui/lineeditwithstatus.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/gui/plaintoolbutton.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: ../src/gui/systemtrayicon.h
@@ -12970,7 +12968,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QLineEdit
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QListWidget
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QMenu
-CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QPushButton
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QScrollArea
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QSpacerItem
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/QSystemTrayIcon
@@ -13002,7 +12999,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qlistview.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qlistwidget.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qmenu.h
-CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qpushbutton.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qrubberband.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qscrollarea.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/sampleeditor.cpp.o: /usr/include/qt5/QtWidgets/qsizepolicy.h
@@ -13368,7 +13364,6 @@ CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: .
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/core/templateeditor.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/core/templatesimulator.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/definitions/definitions.h
-CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/gui/labelwithstatus.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/gui/lineeditwithstatus.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/gui/plaintoolbutton.h
 CMakeFiles/buildmlearn-toolkit.dir/src/templates/sample/samplesimulator.cpp.o: ../src/gui/systemtrayicon.h

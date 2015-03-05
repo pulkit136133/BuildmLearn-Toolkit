@@ -29,7 +29,7 @@
    <item>
     <widget class="QStackedWidget" name="m_phoneWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="m_pageStopped">
       <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -155,7 +155,7 @@
        <item row="0" column="0" colspan="3">
         <widget class="QLabel" name="m_lblHeading_3">
          <property name="text">
-          <string notr="true">&lt;span style=&quot; font-size:18pt;&quot;&gt;That was the last card!&lt;/span&gt;</string>
+          <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;End of text phrases!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>

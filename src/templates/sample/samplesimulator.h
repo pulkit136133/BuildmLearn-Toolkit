@@ -63,4 +63,4 @@ class SampleSimulator : public TemplateSimulator {
     Ui::SampleSimulator *m_ui;
 };
 
-#endif // FLASHCARDSIMULATOR_H
+#endif

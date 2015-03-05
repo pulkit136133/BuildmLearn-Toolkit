@@ -58,7 +58,7 @@ class SampleItem : public QWidget {
     void setQuestion(const SampleQuestion &question, int question_number, int total_questions);
 
   private slots:
-    void flip();
+    void speak();
 
   signals:
     void nextCardRequested();

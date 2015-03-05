@@ -60,4 +60,4 @@ class SampleQuestion {
 
 Q_DECLARE_METATYPE(SampleQuestion)
 
-#endif // FLASHCARDQUESTION_H
+#endif

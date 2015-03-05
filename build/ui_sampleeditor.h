@@ -20,11 +20,9 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QWidget>
-#include "labelwithstatus.h"
 #include "lineeditwithstatus.h"
 #include "plaintoolbutton.h"
 
@@ -56,16 +54,11 @@ public:
     QGroupBox *m_groupQuestionEditor;
     QFormLayout *formLayout;
     QLabel *label;
-    QLabel *label_5;
-    QHBoxLayout *horizontalLayout_12;
-    QPushButton *m_btnPictureSelect;
-    LabelWithStatus *m_lblPictureFile;
-    QLabel *m_lblPictureView;
+    LineEditWithStatus *m_txtQuestion;
     QLabel *label_2;
     LineEditWithStatus *m_txtAnswer;
     QLabel *label_7;
     LineEditWithStatus *m_txtHint;
-    LineEditWithStatus *m_txtQuestion;
     QSpacerItem *verticalSpacer;
 
     void setupUi(QWidget *SampleEditor)
@@ -82,7 +75,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 571, 443));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 585, 382));
         gridLayout = new QGridLayout(scrollAreaWidgetContents);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -180,65 +173,30 @@ public:
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label);
 
-        label_5 = new QLabel(m_groupQuestionEditor);
-        label_5->setObjectName(QStringLiteral("label_5"));
-
-        formLayout->setWidget(1, QFormLayout::LabelRole, label_5);
-
-        horizontalLayout_12 = new QHBoxLayout();
-        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
-        m_btnPictureSelect = new QPushButton(m_groupQuestionEditor);
-        m_btnPictureSelect->setObjectName(QStringLiteral("m_btnPictureSelect"));
-
-        horizontalLayout_12->addWidget(m_btnPictureSelect);
-
-        m_lblPictureFile = new LabelWithStatus(m_groupQuestionEditor);
-        m_lblPictureFile->setObjectName(QStringLiteral("m_lblPictureFile"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(m_lblPictureFile->sizePolicy().hasHeightForWidth());
-        m_lblPictureFile->setSizePolicy(sizePolicy1);
-        m_lblPictureFile->setLayoutDirection(Qt::RightToLeft);
-
-        horizontalLayout_12->addWidget(m_lblPictureFile);
-
-
-        formLayout->setLayout(1, QFormLayout::FieldRole, horizontalLayout_12);
-
-        m_lblPictureView = new QLabel(m_groupQuestionEditor);
-        m_lblPictureView->setObjectName(QStringLiteral("m_lblPictureView"));
-        m_lblPictureView->setMinimumSize(QSize(0, 130));
-        m_lblPictureView->setMaximumSize(QSize(16777215, 130));
-        m_lblPictureView->setFrameShape(QFrame::NoFrame);
-        m_lblPictureView->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
-
-        formLayout->setWidget(2, QFormLayout::FieldRole, m_lblPictureView);
-
-        label_2 = new QLabel(m_groupQuestionEditor);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        formLayout->setWidget(4, QFormLayout::LabelRole, label_2);
-
-        m_txtAnswer = new LineEditWithStatus(m_groupQuestionEditor);
-        m_txtAnswer->setObjectName(QStringLiteral("m_txtAnswer"));
-
-        formLayout->setWidget(4, QFormLayout::FieldRole, m_txtAnswer);
-
-        label_7 = new QLabel(m_groupQuestionEditor);
-        label_7->setObjectName(QStringLiteral("label_7"));
-
-        formLayout->setWidget(5, QFormLayout::LabelRole, label_7);
-
-        m_txtHint = new LineEditWithStatus(m_groupQuestionEditor);
-        m_txtHint->setObjectName(QStringLiteral("m_txtHint"));
-
-        formLayout->setWidget(5, QFormLayout::FieldRole, m_txtHint);
-
         m_txtQuestion = new LineEditWithStatus(m_groupQuestionEditor);
         m_txtQuestion->setObjectName(QStringLiteral("m_txtQuestion"));
 
         formLayout->setWidget(0, QFormLayout::FieldRole, m_txtQuestion);
+
+        label_2 = new QLabel(m_groupQuestionEditor);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        formLayout->setWidget(1, QFormLayout::LabelRole, label_2);
+
+        m_txtAnswer = new LineEditWithStatus(m_groupQuestionEditor);
+        m_txtAnswer->setObjectName(QStringLiteral("m_txtAnswer"));
+
+        formLayout->setWidget(1, QFormLayout::FieldRole, m_txtAnswer);
+
+        label_7 = new QLabel(m_groupQuestionEditor);
+        label_7->setObjectName(QStringLiteral("label_7"));
+
+        formLayout->setWidget(4, QFormLayout::LabelRole, label_7);
+
+        m_txtHint = new LineEditWithStatus(m_groupQuestionEditor);
+        m_txtHint->setObjectName(QStringLiteral("m_txtHint"));
+
+        formLayout->setWidget(4, QFormLayout::FieldRole, m_txtHint);
 
 
         gridLayout->addWidget(m_groupQuestionEditor, 0, 0, 1, 1);
@@ -263,7 +221,7 @@ public:
         groupBox_3->setTitle(QApplication::translate("SampleEditor", "Sample metadata", 0));
         label_3->setText(QApplication::translate("SampleEditor", "Author", 0));
         label_4->setText(QApplication::translate("SampleEditor", "Collection name", 0));
-        label_6->setText(QApplication::translate("SampleEditor", "Number of questions", 0));
+        label_6->setText(QApplication::translate("SampleEditor", "Number of slides", 0));
         groupBox_2->setTitle(QApplication::translate("SampleEditor", "Active questions", 0));
 #ifndef QT_NO_TOOLTIP
         m_btnQuestionAdd->setToolTip(QApplication::translate("SampleEditor", "Add new question.", 0));
@@ -285,10 +243,7 @@ public:
         m_listQuestions->setToolTip(QApplication::translate("SampleEditor", "This list contains already added questions.", 0));
 #endif // QT_NO_TOOLTIP
         m_groupQuestionEditor->setTitle(QApplication::translate("SampleEditor", "Question editor", 0));
-        label->setText(QApplication::translate("SampleEditor", "Question", 0));
-        label_5->setText(QApplication::translate("SampleEditor", "Picture", 0));
-        m_btnPictureSelect->setText(QApplication::translate("SampleEditor", "&Select", 0));
-        m_lblPictureView->setText(QString());
+        label->setText(QApplication::translate("SampleEditor", "Title", 0));
         label_2->setText(QApplication::translate("SampleEditor", "Answer", 0));
         label_7->setText(QApplication::translate("SampleEditor", "Hint", 0));
     } // retranslateUi

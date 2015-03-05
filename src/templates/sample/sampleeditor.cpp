@@ -213,7 +213,7 @@ bool SampleEditor::loadBundleData(const QString &bundle_data) {
 
         if (IOFactory::base64ToFile(image_data, target_image_file)) {
           // Picture from the item was saved to disk.
-          addQuestion(question, answer, hint);//, target_image_file);
+          addQuestion(question, answer, hint);
         }
         else {
           // TODO: errro
@@ -348,8 +348,7 @@ void SampleEditor::moveQuestionDown() {
 
 void SampleEditor::addQuestion(const QString &question,
                                   const QString &answer,
-                                  const QString &hint) {//,
-                                  //const QString &picture_path) {
+                                  const QString &hint) {
   int marked_question = m_ui->m_listQuestions->currentRow();
   SampleQuestion new_question;
   QListWidgetItem *new_item = new QListWidgetItem();
@@ -357,7 +356,6 @@ void SampleEditor::addQuestion(const QString &question,
   new_question.setQuestion(question);
   new_question.setHint(hint);
   new_question.setAnswer(answer);
-  //new_question.setPicturePath(picture_path);
 
   new_item->setText(new_question.question());
   new_item->setData(Qt::UserRole, QVariant::fromValue(new_question));
@@ -382,10 +380,8 @@ void SampleEditor::addQuestion(const QString &question,
 void SampleEditor::addQuestion() {
   addQuestion(tr("Sample Slide"),
               tr("This is a sample slide. click speak to listen to this slide."),
-              tr("Answer questions in the next tab"));//,
-              //APP_TEMPLATES_PATH + QDir::separator() +
-              //core()->entryPoint()->baseFolder() + QDir::separator() +
-              //"cat.png");
+              tr("Answer questions in the next tab"));
+
   launch();
   emit changed();
 }
@@ -396,7 +392,6 @@ void SampleEditor::setEditorsEnabled(bool enabled) {
 
 void SampleEditor::loadQuestion(int index) {
   m_ui->m_txtQuestion->blockSignals(true);
-  //m_ui->m_lblPictureFile->label()->blockSignals(true);
 
   if (index >= 0) {
     SampleQuestion question = m_ui->m_listQuestions->item(index)->data(Qt::UserRole).value<SampleQuestion>();
@@ -404,7 +399,6 @@ void SampleEditor::loadQuestion(int index) {
     m_ui->m_txtQuestion->lineEdit()->setText(question.question());
     m_ui->m_txtAnswer->lineEdit()->setText(question.answer());
     m_ui->m_txtHint->lineEdit()->setText(question.hint());
-    //loadPicture(question.picturePath());
 
     m_activeQuestion = question;
   }
@@ -412,11 +406,9 @@ void SampleEditor::loadQuestion(int index) {
     m_ui->m_txtQuestion->lineEdit()->setText(QString());
     m_ui->m_txtAnswer->lineEdit()->setText(QString());
     m_ui->m_txtHint->lineEdit()->setText(QString());
-    //loadPicture(QString());
   }
 
   m_ui->m_txtQuestion->blockSignals(false);
-  //m_ui->m_lblPictureFile->label()->blockSignals(false);
 
   checkAnswer();
   checkHint();
@@ -428,7 +420,6 @@ void SampleEditor::saveQuestion() {
   m_activeQuestion.setQuestion(m_ui->m_txtQuestion->lineEdit()->text());
   m_activeQuestion.setAnswer(m_ui->m_txtAnswer->lineEdit()->text());
   m_activeQuestion.setHint(m_ui->m_txtHint->lineEdit()->text());
-  //m_activeQuestion.setPicturePath(m_ui->m_lblPictureFile->label()->toolTip());
 
   m_ui->m_listQuestions->currentItem()->setData(Qt::UserRole, QVariant::fromValue(m_activeQuestion));
   m_ui->m_listQuestions->currentItem()->setText(m_activeQuestion.question());

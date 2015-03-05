@@ -57,18 +57,18 @@ public:
             SampleSimulator->setObjectName(QStringLiteral("SampleSimulator"));
         SampleSimulator->resize(381, 434);
         verticalLayout_3 = new QVBoxLayout(SampleSimulator);
-        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
         m_phoneWidget = new QStackedWidget(SampleSimulator);
         m_phoneWidget->setObjectName(QStringLiteral("m_phoneWidget"));
         m_pageStopped = new QWidget();
         m_pageStopped->setObjectName(QStringLiteral("m_pageStopped"));
         horizontalLayout_3 = new QHBoxLayout(m_pageStopped);
-        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
         m_lblHeading_2 = new QLabel(m_pageStopped);
         m_lblHeading_2->setObjectName(QStringLiteral("m_lblHeading_2"));
-        m_lblHeading_2->setText(QStringLiteral("<span style=\" font-size:18pt;\">Flash cards</span>"));
+        m_lblHeading_2->setText(QStringLiteral("<html><head/><body><p><span style=\" font-size:18pt;\">Sample</span></p></body></html>"));
         m_lblHeading_2->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_3->addWidget(m_lblHeading_2);
@@ -128,7 +128,7 @@ public:
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         m_lblHeading_3 = new QLabel(m_pageFinish);
         m_lblHeading_3->setObjectName(QStringLiteral("m_lblHeading_3"));
-        m_lblHeading_3->setText(QStringLiteral("<span style=\" font-size:18pt;\">That was the last card!</span>"));
+        m_lblHeading_3->setText(QStringLiteral("<html><head/><body><p><span style=\" font-size:18pt;\">End of text phrases!</span></p></body></html>"));
         m_lblHeading_3->setAlignment(Qt::AlignCenter);
         m_lblHeading_3->setWordWrap(true);
 
@@ -154,7 +154,7 @@ public:
 
         retranslateUi(SampleSimulator);
 
-        m_phoneWidget->setCurrentIndex(0);
+        m_phoneWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(SampleSimulator);

@@ -122,7 +122,7 @@ public:
         m_lblDummy->setText(QString());
         m_lblHint->setText(QString());
         m_btnPrevious->setText(QApplication::translate("SampleItem", "&Previous", 0));
-        m_btnFlip->setText(QApplication::translate("SampleItem", "&Flip", 0));
+        m_btnFlip->setText(QApplication::translate("SampleItem", "Speak", 0));
         m_btnNext->setText(QApplication::translate("SampleItem", "&Next", 0));
     } // retranslateUi
 
